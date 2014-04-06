@@ -6,6 +6,10 @@ DOCKER_VERSION=0.9.1
 echo "++-- Install Git "
 sudo apt-get install -y git
 
+# Install Java 
+echo "++-- Install Java Open-JDK-7 "
+sudo apt-get -y install openjdk-7-jdk
+
 #Install docker
 echo "++-- Install Docker"
 sudo apt-get install -y linux-image-extra-`uname -r`
@@ -36,4 +40,10 @@ git clone https://github.com/Treeptik/micropaas-image.git
 echo "++-- Build all images ..."
 cd micropaas-image
 sh buildAll.sh
+
+# Get Jenkins
+cd ~
+wget http://mirrors.jenkins-ci.org/war/latest/jenkins.war
+
+
 
