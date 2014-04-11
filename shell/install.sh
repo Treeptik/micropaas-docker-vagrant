@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOCKER_VERSION=0.9.1
+DOCKER_VERSION=0.8.1
 
 # Install Git
 echo "++-- Install Git "
