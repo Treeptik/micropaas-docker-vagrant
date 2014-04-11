@@ -42,8 +42,8 @@ cd micropaas-image
 sh buildAll.sh
 
 # Get Jenkins
-cd ~
+cd /home/vagrant
 wget http://mirrors.jenkins-ci.org/war/latest/jenkins.war
-
+chown	vagrant:vagrant jenkins.war
 
 
