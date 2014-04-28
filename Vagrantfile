@@ -15,8 +15,8 @@ Vagrant.configure("2") do |config|
   config.vm.box_url = "http://cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box"
 
 	config.vm.provision "shell", path: "shell/install.sh" 
-
-	config.vm.network :public_network
+	config.vm.network "private_network", ip: "192.168.50.4"
+	#config.vm.network :public_network
    config.vm.provider :virtualbox do |vb|
      # Don't boot with headless mode
      #vb.gui = true
